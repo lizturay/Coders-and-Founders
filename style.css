@@ -58,6 +58,32 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+.toggle-icon{
+    color: goldenrod;
+}
+  
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
 .header-text{
     margin-top: 20%;
     font-size: 60px;
@@ -256,8 +282,8 @@ nav ul li a:hover::after{
     text-align: center;
     margin-top: 20px;
 }
-#fortune p.response{
-    background-image: url(images/giphy.gif);
+#fortune .response p{
+    transition: transform 0.5;
 }
 #fortune .btn{
     margin-top: 20px;
@@ -277,6 +303,7 @@ nav ul li a:hover::after{
 }
 #comment .sub-title{
     text-align: center;
+    margin-bottom: 20px;
 }
 .comment-box{
     flex-basis: 65%;
@@ -294,7 +321,7 @@ nav ul li a:hover::after{
 }
 form input,form textarea{
     width: 100%;
-    border: 0;
+    border: 1.1px solid #B4B4B4;
     outline: none;
     background: #B4B4B4;
     padding: 15px;
@@ -309,8 +336,6 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
-
-
 .comment-container{
     width: 100%;
     border: 0;
@@ -325,13 +350,110 @@ form .btn2{
 .comment-box.textbox{
     outline: none;
 }
-
 .comment-box p{
     width: 100%;
-    text-align: right;
+    text-align: left;
     margin-top: 15px;
     color: #5A5A5A;
 }
+/*-------------comments-------------*/
+
+.add-btn {
+	width: 80px;
+    font-size: 15px;
+    color: white;
+}
+
+
+.hr{
+	color:rgba(0,0,0,0.15);
+	width:600px;
+}
+
+.comment-header {
+	display:flex;width:50%;justify-content:space-between;
+}
+
+.comment-input-row {
+	display:flex;margin-top:20px;margin-bottom:10px;
+}
+
+
+/*-------------comments-------------*/
+
+
+.cset_comments{
+    margin-top: 40px;
+}
+
+
+.csetcomment{
+    border: 1px solid #8C8C8C;
+    border-bottom: 3px solid #3C3C3C;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+
+.cset_meta{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    align-items: center;
+}
+
+.cset_meta_date_author{
+    font-size: 0.85rem;
+}
+.cset_meta_author{
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+.cset_vote{
+    text-align: right;
+}
+.cset_vote_options{
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+
+.cset_upvote,
+.cset_downvote{
+    cursor: pointer;
+}
+
+.comment-box .author,
+.likes {
+    color: #777;
+    font-weight: bold;
+    font-size: 14px;
+}
+.comment-box .author {
+    margin-top: 10px;
+}
+
+.comment-box .likes {
+    margin-bottom: 10px;
+}
+
+.comment-box .reply-box {
+    margin-top: 10px;
+}
+
+.comment-box input {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #777;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+        rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+
+
 
 
 /*-------------footer-------------*/
