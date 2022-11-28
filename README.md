@@ -61,7 +61,7 @@ and features to make them both appealing and functional.
 
 - I tried to implement my 'Comment Section' onto my main HTML file, but was unable to so I linked it to a seperate file and it worked out perfectly!
 - Using JavaScript to add movies in the 'Movie Data' without needing to input them invidually.
-- Looking through code to see that '.' had to be replaced with '-' or anything mispelt (it reminded me of the Princess and the Pea)
+- Looking through code to see that '.' had to be replaced with '-' or anything mispelt (it reminded me of the Princess and the Pea - you can't rest until you find the tiny error!)
 
 ### Useful resources
 
