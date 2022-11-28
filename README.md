@@ -17,13 +17,9 @@ This is my submmission for the Skills Bootcamp!
 
 ## Overview
 
-I applied for Founders and Coders after comming across a recommendation as I wanted 
-to learn more amongst people who also wanted to purse a career in development - I also 
-love a challenge and surprising myself with my capabilities. 
-
-I decided to go for a simpler, one-page template as I did start less than a month before the deadline 
+I decided to go for a simpler, one-page template as I did start less than a month before the deadline, 
 so I didn't want to make things harder for myself as time was running out. I did link a few projects 
-that needed their separate files, as it was more organised and allowed my to explore different themes 
+that needed their own separate files, as it was more organised and allowed me to explore different themes 
 and features to make them both appealing and functional.
 
 ### The challenge
