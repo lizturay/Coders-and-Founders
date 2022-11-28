@@ -50,7 +50,7 @@ and features to make them both appealing and functional.
 
 ### What I learned
 
-- I learned that I could attach the event listener onclick in the html which made my layout look clean and put together::
+- I learned that I could attach the event listener onclick in the html which made my layout look clean and put together:
 
 ```html
 <div class="btn" onclick="opentab()">
