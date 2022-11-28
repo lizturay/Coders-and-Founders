@@ -1,4 +1,4 @@
-# ash-invitation-card
+# Founders and Coders Project
 
 This is my submmission for the Skills Bootcamp!
 
@@ -34,7 +34,7 @@ and features to make them both appealing and functional.
 
 ### Screenshot
 
-![Screen Shot 2022-11-28 at 12 20 36 PM](https://user-images.githubusercontent.com/89284873/193322189-9b01c15a-4f25-4e81-b4fa-94348049f223.png)
+![Screen Shot 2022-11-28 at 12 20 36 PM](https://i.imgur.com/9PhadY2.png)
 
 ### Link
 
