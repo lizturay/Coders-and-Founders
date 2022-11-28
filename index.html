@@ -32,6 +32,21 @@
             <h1>I'm <span class="auto-type"></span></h1>
             <h3><span>Based in London.</span></h3>
             <p id="date-time" class="date"></p>
+                   
+            <script> 
+            
+                var dt = new Date();
+                document.getElementById('date-time').innerHTML=dt;
+
+                var typed = new Typed(".auto-type", {
+                    strings: ["Elizabeth Turay", "a Software Developer", "a Video Game Enthusiast", "a Creator"],
+                    typespeed: 700,
+                    backSpeed: 80,
+                    loop: true
+                })
+                
+            </script>
+        
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
