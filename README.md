@@ -34,7 +34,7 @@ and features to make them both appealing and functional.
 
 ### Screenshot
 
-![Screen Shot 2022-11-28 at 12 20 36 PM](https://i.imgur.com/9PhadY2.png)
+![Screen Shot 2022-11-28 at 12 20 36 PM]([https://i.imgur.com/9PhadY2.png](https://i.imgur.com/Be2ethA.png)
 
 ### Link
 
