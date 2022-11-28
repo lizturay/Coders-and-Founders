@@ -19,11 +19,14 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#project">Projects</a></li>
-                <li><a href="movie data\index.html">Movie Data</a></li>
-                <li><a href="#fortune">Fortune Teller</a></li>
-                <li><a href="#comment">Comment</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <div class="toggle">
+                <i class="fas fa-sun toggle-icon"></i>
+                <i class="fas fa-moon toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
@@ -32,11 +35,30 @@
             <h3><span>Based in London.</span></h3>
             <p id="date-time" class="date"></p>
         </div>
+
+        <script>
+
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML=dt;
+        
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+       <script>
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Elizabeth Turay", "a Software Developer", "a Video Game Enthusiast", "a Creator"],
+            typespeed: 700,
+            backSpeed: 80,
+            loop: true
+        })
+
+       </script>
+
     </div>
 </div>   
-
-
-<!-----------------------About------------------------->
+<!-----------------------about------------------------->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -50,16 +72,12 @@
                     applying for Founders and Coders.</h2>
                 <p>I am a Biomedical Science Graduate and have experience 
                     as a Project Management Intern and industries such as Retail, 
-                    Healthcare and Media. My hobbies include playing the piano, art, gaming, fashion, fitness, travel and literature. I am currently pursuing 
-                    my passion for learing, creating and building projects with code towards a career in 
-                    software development. In order for me to fulfill that I decided to apply and showcase what I already knew and tried things that I've never 
-                    attempted before and it was invigorating with how much I enjoyed doing this, even when I got stuck on something or found a minor issue and 
-                    resolved it. I know that this is a course that would benefit me by pushing me to grow and excell in the tech industry and I would love to be part of it.</p>
-                <p>I have completed a few courses which have helped me learn what I know so far and 
-                    aiding my skills in <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>Python</b> and <b>React</b>, along with a few more.</p>
-                    <p>Megan Thee Stallion is young, beautiful and empowering woman. She embodies characteristics that makes her radiate in many forms and it is inspiring to watch someone who 
-                        not only is a 
-                    </p>
+                    Healthcare and Media. Now, I am pursuing 
+                    my passion for learing how to code towards a career in 
+                    software development.</p>
+                <p>I am currently seeking opportunies in software development and 
+                    I have completed a few courses which have helped me learn and 
+                    improve my skills in <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>Python</b> and <b>React</b>.</p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('education')">Education</p>
@@ -100,8 +118,7 @@
         </div>
     </div>
 </div>
-
-<!----------------------Projects--------------------->
+<!------------------projects----------------->
 <div id="project">
     <div class="container">
         <h1 class="sub-title">My <span>Projects</span></h1>
@@ -141,71 +158,39 @@
     </div>
 </div>
 
-<!--------------------Fortune Teller-------------------->
-<div id="fortune">
+<!----------------Fortune Teller------------->
+
+
+
+
+<!------------------contact------------->
+<div id="contact">
     <div class="container">
-        <h1 class="sub-title">Seek your <span>Fortune</span></h1>
-        <p>Let's have some fun. Click to see your fortune!</p>
-        <button id="button" type="button" value="submit" class="btn" onclick="response()">Click Here</button>
-        <p id="response"></p>
-    </div>
-</div>
-
-
-
-<!---------------------Comment Input---------------------->
-<div id="comment">
-    <div class="container">
-        <h1 class="sub-title"><span>Comments Section</span></h1>
-
-                <div class="csetcomment" id="csetcomment_1">
-                    <div class="cset_comment">
-                        <p>You did so good! I'm so proud of you.</p>
-                    </div>
-                    <div class="cset_meta">
-                        <div class="cset_meta_date_author">
-                            16th November 2022
-                            <span class="cset_meta_author">Megan Thee Stallion</span>
-                        </div>
-                        <div class="cset_vote">
-                            <span class="cset_vote_1">+3</span>
-                            <div class="cset_vote_options">
-                                <span class="cset_upvote" data-id="1">&#9650;</span>
-                                <span class="cset_downvote" data-id="1">&#9660;</span>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Leave a <span>Comment</span></h1>
+                <p>If you have any questions or would like to get to know more about me, 
+                    please feel free to contact me by completing the form below.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ramgiatuelizabethturay/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/lizturay"><i class="fa-brands fa-github"></i></a>
                 </div>
-
-
-                <div class="csetcomment" id="csetcomment_2">
-                    <div class="cset_comment">
-                        <p> FEED ME!</p>
-                    </div>
-                    <div class="cset_meta">
-                        <div class="cset_meta_date_author">
-                            16th November 2022
-                            <span class="cset_meta_author">Sage (Your beloved trouble maker)</span>
-                        </div>
-                        <div class="cset_vote">
-                            <span class="cset_vote_3">+12</span>
-                            <div class="cset_vote_options">
-                                <span class="cset_upvote" data-id="2">&#9650;</span>
-                                <span class="cset_downvote" data-id="2">&#9660;</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="C:\Users\eliza\OneDrive\Desktop\Coders and Founders\comment box\index.html" class="btn">Click here to continue the discussion</a>
-
+                <a href="images/RETCVT.pdf" class="btn btn2">Download CV</a>
             </div>
-        </div>        
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
     </div>
 </div>
 
-
-<!----------------------Footer-------------------->
+<!------------------footer-------------->
 <footer>
     <div class="copyright">
         <div class="left">
@@ -213,14 +198,14 @@
             <p> | © 2022 <span>Elizabeth</span></p>
         </div>
     </div>
-</footer>
+  </footer>
 
-<!----------------------Scripts-------------------->
+
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
-        
+    
     function opentab(tabname){
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
@@ -231,41 +216,39 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-    
-    
-    
-    </script>    
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</script>
 
-        <script>
+<script>
 
-        var dt = new Date();
-        document.getElementById('date-time').innerHTML=dt;
+    var sidemenu = document.getElementById("sidemenu");
 
-        var typed = new Typed(".auto-type", {
-            strings: ["Elizabeth Turay", "a Software Developer", "a Video Game Enthusiast", "a Creator"],
-            typespeed: 700,
-            backSpeed: 80,
-            loop: true
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxMoY4Z3B6-ydFuQLgIPi-aLI0AyOPBPifKH4Q8mBTFfmLpZWIEXDZJ5d05qqhrRQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
         })
+        .catch(error => console.error('Error!', error.message))
+    })
 
-        </script>
-
-        <script>
-
-        var sidemenu = document.getElementById("sidemenu");
-        
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-
-        </script>
-
-<script defer src="main.js"></script>
+</script>
 
 </body>
 </html>
