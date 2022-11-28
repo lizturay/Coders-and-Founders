@@ -18,7 +18,7 @@ fetch(json_url).then(Response => Response.json())
         data.forEach((ele, i) => {
             let { name, imdb, date, sposter, bposter, genre, url } = ele;
             let card = document.createElement('a');
-            card.classList.add('cards');
+            card.classList.add('card');
             card.href = url;
             card.innerHTML = `
             <img src="${sposter}" alt="${name}" class="poster">
@@ -33,7 +33,7 @@ fetch(json_url).then(Response => Response.json())
                 </div>
             </div>
             `
-            cards.appendChild(cards);
+            cards.appendChild(card);
         });
 
         document.getElementById('title').innerText = data[0].name;

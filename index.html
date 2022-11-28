@@ -19,16 +19,11 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#project">Projects</a></li>
-                <li><a href="C:\Users\eliza\OneDrive\Desktop\Coders and Founders\movie data\movie.html">Movie Data</a></li>
+                <li><a href="movie data\index.html">Movie Data</a></li>
                 <li><a href="#fortune">Fortune Teller</a></li>
                 <li><a href="#comment">Comment</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <div class="toggle">
-                <i class="fas fa-sun toggle-icon"></i>
-                <i class="fas fa-moon toggle-icon"></i>
-                <div class="toggle-ball"></div>
-            </div>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
@@ -37,24 +32,10 @@
             <h3><span>Based in London.</span></h3>
             <p id="date-time" class="date"></p>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-        <script>
-        
-        var dt = new Date();
-        document.getElementById('date-time').innerHTML=dt;
-
-        var typed = new Typed(".auto-type", {
-            strings: ["Elizabeth Turay", "a Software Developer", "a Video Game Enthusiast", "a Creator"],
-            typespeed: 700,
-            backSpeed: 80,
-            loop: true
-})
-
-        </script>
     </div>
 </div>   
+
+
 <!-----------------------About------------------------->
 <div id="about">
     <div class="container">
@@ -65,16 +46,20 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About <span>Me</span></h1>
-                <h2>Hello! I am Elizabeth Turay, a Junior Fullstack Developer 
-                    based in London.</h2>
+                <h2>Hello! I am Elizabeth, an aspiring Fullstack Developer 
+                    applying for Founders and Coders.</h2>
                 <p>I am a Biomedical Science Graduate and have experience 
                     as a Project Management Intern and industries such as Retail, 
                     Healthcare and Media. My hobbies include playing the piano, art, gaming, fashion, fitness, travel and literature. I am currently pursuing 
                     my passion for learing, creating and building projects with code towards a career in 
-                    software development.</p>
-                <p>I am currently seeking opportunies in software development and 
-                    I have completed a few courses which have helped me learn and 
-                    improve my skills in <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>Python</b> and <b>React</b>, along with a few more.</p>
+                    software development. In order for me to fulfill that I decided to apply and showcase what I already knew and tried things that I've never 
+                    attempted before and it was invigorating with how much I enjoyed doing this, even when I got stuck on something or found a minor issue and 
+                    resolved it. I know that this is a course that would benefit me by pushing me to grow and excell in the tech industry and I would love to be part of it.</p>
+                <p>I have completed a few courses which have helped me learn what I know so far and 
+                    aiding my skills in <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, <b>Python</b> and <b>React</b>, along with a few more.</p>
+                    <p>Megan Thee Stallion is young, beautiful and empowering woman. She embodies characteristics that makes her radiate in many forms and it is inspiring to watch someone who 
+                        not only is a 
+                    </p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('education')">Education</p>
@@ -146,7 +131,7 @@
             <div class="project">    
                 <img src="images/work3.png">
                 <div class="layer">
-                    <h2>Web Design</h2>
+                    <h2>Invitation Card</h2>
                     <p>A mini project from a 'CFG Javascript MOOC' course where I created an invitation card link.</p>
                     <a href="https://github.com/lizturay/Javascript-Invite-Card"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -214,14 +199,10 @@
 
                 <a href="C:\Users\eliza\OneDrive\Desktop\Coders and Founders\comment box\index.html" class="btn">Click here to continue the discussion</a>
 
-
             </div>
         </div>        
     </div>
 </div>
-
-
-
 
 
 <!----------------------Footer-------------------->
@@ -233,6 +214,56 @@
         </div>
     </div>
 </footer>
+
+<!----------------------Scripts-------------------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+        
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+    
+    
+    </script>    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML=dt;
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Elizabeth Turay", "a Software Developer", "a Video Game Enthusiast", "a Creator"],
+            typespeed: 700,
+            backSpeed: 80,
+            loop: true
+        })
+
+        </script>
+
+        <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        </script>
 
 <script defer src="main.js"></script>
 
